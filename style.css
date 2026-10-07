@@ -1,0 +1,274 @@
+/* Reset Universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Variável para a cor Azul Royal Escuro */
+:root {
+  --blue-royal: #191970;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-royal);
+  color: #fff;
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.4rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Banner Principal (Hero) */
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #000;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 0.6rem 1.8rem;
+  background-color: var(--blue-royal);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 2px;
+}
+
+/* Seção Sobre */
+.section-about {
+  background-color: var(--blue-royal);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.container-about {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.section-about h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-about p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.btn-about {
+  display: inline-block;
+  padding: 0.6rem 1.8rem;
+  background-color: #e0e0e0;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 2px;
+}
+
+/* Seção Serviços */
+.section-services {
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-services h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  text-align: center;
+}
+
+.icon-service {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  font-size: 0.82rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Seção Fotos */
+.section-photos {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.section-photos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  width: 100%;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Rodapé */
+footer {
+  background-color: #fff;
+  color: #333;
+  padding-top: 3rem;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 0 2rem 3rem 2rem;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  justify-content: center;
+}
+
+.info-contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-contact a {
+  color: #0000ff;
+}
+
+.icon-contact {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.about-company h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about-company p {
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+}
+
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Faixa Inferior do Rodapé */
+.footer-bottom {
+  background-color: var(--blue-royal);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: underline;
+  display: block;
+  margin-top: 0.3rem;
+}
